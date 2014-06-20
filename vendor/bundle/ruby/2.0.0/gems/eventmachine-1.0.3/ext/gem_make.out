@@ -1,0 +1,27 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb 
+checking for rb_trap_immediate in ruby.h,rubysig.h... no
+checking for rb_thread_blocking_region()... yes
+checking for inotify_init() in sys/inotify.h... no
+checking for __NR_inotify_init in sys/syscall.h... no
+checking for writev() in sys/uio.h... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_enable_interrupt()... no
+checking for rb_time_new()... yes
+checking for sys/event.h... yes
+checking for sys/queue.h... yes
+creating Makefile
+
+make "DESTDIR="
+compiling binder.cpp
+compiling cmain.cpp
+compiling ed.cpp
+compiling em.cpp
+compiling kb.cpp
+compiling page.cpp
+compiling pipe.cpp
+compiling rubymain.cpp
+compiling ssl.cpp
+linking shared-object rubyeventmachine.bundle
+clang: error: unknown argument: '-multiply_definedsuppress' [-Wunused-command-line-argument-hard-error-in-future]
+clang: note: this will be a hard error (cannot be downgraded to a warning) in the future
+make: *** [rubyeventmachine.bundle] Error 1
